@@ -1,0 +1,30 @@
+
+GET http://localhost:8080/v1/books 
+
+###
+GET http://localhost:8080/v1/books/1
+
+
+###
+POST http://localhost:8080/v1/books
+content-type: application/json
+
+{
+    "title": "The Great Gatsby",
+    "isbn": "F. Scott Fitzgerald",
+    "price": 50.0
+}
+
+###
+PUT http://localhost:8080/v1/books/1
+content-type: application/json
+
+{
+    "title": "The Great Gatsby",
+  "isbn": "F. Scott Fitzgerald",
+  "price": 45.0
+}
+
+###
+DELETE http://localhost:8080/v1/books/2
+

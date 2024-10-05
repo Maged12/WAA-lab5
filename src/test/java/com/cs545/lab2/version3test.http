@@ -1,0 +1,35 @@
+
+GET http://localhost:8080/books 
+Header: X-API-VERSION: 2
+
+###
+GET http://localhost:8080/books/1
+Header: X-API-VERSION: 2
+
+###
+POST http://localhost:8080/books
+Header: X-API-VERSION: 2
+content-type: application/json
+
+{
+    "id": 4,
+    "title": "The Great Gatsby",
+    "isbn": "F. Scott Fitzgerald",
+    "price": 45.0
+}
+
+###
+PUT http://localhost:8080/books/4
+Header: X-API-VERSION: 2
+content-type: application/json
+
+{
+    "title": "The Great",
+    "isbn": "F. Scott",
+    "price": 50
+}
+
+###
+DELETE http://localhost:8080/books/4
+Header: X-API-VERSION: 2
+
